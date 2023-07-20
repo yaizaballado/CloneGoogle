@@ -1,0 +1,107 @@
+<!-- Esqueleto de html (html y elegir la segunda opción html:5) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<!-- head - info al navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página web (en la pestaña) -->
+    <title>Google</title>
+    <!--Conexion hml + css-->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<!-- body - lo que ve el usuarix -->
+<body>
+    <!-- header - encabezado -->
+    <header>
+        <!-- nav - aporta navegación dentro de página -->
+        <nav>
+            <!-- ul -lista no ordenada -->
+            <ul class="nav-right-section" >
+                <!-- Gmail -->
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">Gmail</a>
+                </li>
+                <!-- Imágenes -->
+                <li>
+                    <a href="https://www.google.com/imghp?hl=es-419&authuser=0&ogbl">Imágenes</a>
+                </li>
+                <!-- Menú -->
+                <li class="menu">
+                    <a href=""></a>
+                </li>
+                <!-- Foto de perfil -->
+                <li>
+                    <a href="">
+                        <img src="https://lh3.googleusercontent.com/ogw/AGvuzYbo5VEBRO18Nqtymz7k6VWB1eTTTBy_XGyBjp60xe4=s32-c-mo" alt="">
+                    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main es una division y contenido mas importante-->
+    <main>
+        <!--Sección de logo-->
+        <section class="main-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="logo de google">
+        </section>
+
+        <!--Buscador-Input-->
+<section class="main-input">
+    <div class="main-input-container">
+        <!--lupa-->
+        <span class="search-icon"></span>
+        <!--input deja que el usuario pueda escribir dentro (buscador)-->
+        <input type="text">
+        <!--microfono-->
+        <a class="micro-icon" href=""></a>
+        <!--camara-->
+        <a class="cam-icon" href=""></a>
+    </div>
+</section>
+
+<!--BOTONES-->
+<section class="main-buttons">
+    <div>
+        <button>Buscar con Google</button>
+    </div>
+    <div>
+        <button>Voy a tener suerte</button>
+    </div>
+</section>
+    </main>
+
+    <!--footer pie de página-->
+    <footer>
+        <!--Aqui iría la lista 1-->
+        <ul class="footer-left">
+            <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjQnYHn-5uAAxXILUQIHa6xD1YQkNQCCBI&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-MX%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw09qQxZE2XyQ825PN7qaVq3&opi=89978449">Sobre google</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjQnYHn-5uAAxXILUQIHa6xD1YQkdQCCBM&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_mx%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1WojrTlkf82JPmAMaHF1rF&opi=89978449">Publicidad</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjQnYHn-5uAAxXILUQIHa6xD1YQktQCCBQ&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K&opi=89978449">Negocios</a>
+            </li>
+            <li>
+                <a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la búsqueda</a>
+            </li>
+        </ul>
+        <!--Aqui iría la lista 2-->
+        <ul class="footer-right">
+            <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjQnYHn-5uAAxXILUQIHa6xD1YQ8awCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-MX%26fg%3D1&usg=AOvVaw3XM90S9R-qt_DdBzuhuVqv&opi=89978449">Privacidad</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjQnYHn-5uAAxXILUQIHa6xD1YQ8qwCCBY&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-MX%26fg%3D1&usg=AOvVaw3porZ_dVF3rZDpzDDiJl-Y&opi=89978449">Condiciones</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/preferences?hl=en-MX&fg=1">Preferencias</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body{
+    /*Margen*/
+    margin: 0;
+    /*Margen para adentro*/
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********************************************/
+/****************************************/
+/********************************/
+/* Navegación */
+
+header{
+    /*Width-ancho y height-alto*/
+    width: 100;
+    height: 60px;
+}
+
+header nav{
+    /*display flex y justify content se refiere a la forma del contenido en donde se va a ubicar*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    /*eliminar viñetas*/
+    list-style: none;
+    /*Flexibilidad a nuestro componente*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    /*Elimina linea de abajo*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: rgb(21, 21, 21);
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    /*Modifica el tamaño de la imagen al tamaño del contenedor*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /*redondear bordes*/
+    border-radius: 30px;
+    /*Margen izquierdo separa menu de imagenes*/
+    margin-left: 20px;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* Main */
+main{
+margin-top: 150px;
+text-align: center;
+}
+
+main .main-logo{
+width: 540px;
+/*setea 0 al margen de arriba y abajo-- auto (settea en automatico bordes de los lados)*/
+margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 130px;
+}
+
+/*sección input*/
+main .main-input{
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*caja con bordes redondeados*/
+main .main-input-container{
+    /*borde y pide 3 valores-anchura de linea, estilo y color-)*/
+    /*style: dotted, solid, inset*/
+    border: 1px solid #dfe1e5;
+    /*bordes redondeados*/
+    border-radius: 20px;
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+/*caja de input*/
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*outline es para quitar el borde cuando seleccionas el elemento*/
+    outline: none;
+    width: 450px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 3%;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    padding-right: 3%;
+}
+
+/*BOTONES*/
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*incline block: que este en la misma linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/*Efecto de sombra al pasar el mouse*/
+main .main-input-container:hover{
+    /*offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 0px 5px black;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px #20212447;
+}
+
+footer{
+    /*Width-ancho y height-alto*/
+    width: 100%;
+    list-style: none;
+    display: flex;
+    background-color: #f2f2f3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #f2f2f4;
+    margin: 300px auto;
+    font-size: 14px;
+}
+
+footer .footer-left a{
+    color: rgb(130, 128, 128);
+    margin: 30px;
+}
+footer .footer-left{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+footer .footer-right a{
+    color: rgb(130, 128, 128);
+    margin: 30px;
+}
+
+footer .footer-right{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
